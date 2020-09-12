@@ -18,10 +18,18 @@ rootEl.appendChild(h1); */
 
 const rootEl = document.getElementById('root');
 
-const h1 = React.createElement('h1', {
+/* const h1 = React.createElement('h1', {
   className: 'title',
   children: React.createElement('span', null, 'Introdução ao React'),
-});
-console.log(h1);
+}, text); */
+
+// JSX
+const text = 'Introdução ao React';
+const className = 'title';
+const h1 = (
+  <h1 className={className}>
+    <span>{text}</span>
+  </h1>
+);
 
 ReactDOM.render(h1, rootEl);
