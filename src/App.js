@@ -1,26 +1,13 @@
 import React from 'react';
+import Button from './components/Button';
 
-function Welcome({ firstName, lastName }) {
-  return (
-    <>
-      <h2>
-        Bem vindo {firstName} {lastName}
-      </h2>
-      <p>Você não tem novas notificações.</p>
-    </>
-  );
-}
-
-function App({ isLoggedIn }) {
+function App() {
   return (
     <div>
       <h1>Introdução ao React</h1>
-      {isLoggedIn && (
-        <Welcome
-          firstName="Marcelo"
-          lastName="Dapper"
-        />
-      )}
+      <Button />
+
+      <button className="button">Clique aqui</button>
     </div>
   );
 }
